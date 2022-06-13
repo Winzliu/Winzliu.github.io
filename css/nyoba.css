@@ -1,0 +1,106 @@
+html{
+position: relative;
+}
+
+body{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-bottom: 80px;
+}
+
+/* navbar */
+.navbar{
+    background-color: aqua;
+}
+
+.navbar .navbar-brand{
+    display: inline-block;
+    font-family: 'kdam Thmor Pro', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.navbar .nav-link{
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.navbar a:hover{
+    font-weight: bold;
+    text-shadow: 0 0 3px black;
+}
+
+/* akhir navbar */
+
+
+/* jumbotron */
+.jumbotron{
+    width: 100%;
+    min-height: 600px;
+    background-color: rgba(0, 255, 255, 0.313);
+    padding-top: 10%;
+}
+
+.jumbotron img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 0 35px 5px lightskyblue;
+    border: 2px solid wheat;
+}
+
+/* akhir jumbotron */
+
+/* about */
+.about{
+    min-height: 600px;
+}
+/* akhir about */
+
+/* gallery */
+.gallery{
+    min-height: 600px;
+    background-color: rgba(0, 255, 255, 0.313);
+}
+
+.gallery img{
+    width: 200px;
+    box-shadow: 3px 3px 5px black;
+}
+/* akhir gallery */
+
+/* contact */
+.contact{
+    min-height: 600px;
+    margin-bottom: 40px;
+}
+/* akhir contact */
+
+/* footer */
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 40px;
+    background-color: #a2d9ff;
+}
+/* akhir footer*/
+
+h2{
+
+    margin-top: 40px;
+    text-shadow: 0px 0px 3px black;
+}
+
+
+.konten hr{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 250px;
+    border-top: 3px solid rgb(0, 0, 0);
+}
+
+@media all and (max-width: 992px) {
+    .jumbotron{
+        padding-top: 25%;
+    }
+}
