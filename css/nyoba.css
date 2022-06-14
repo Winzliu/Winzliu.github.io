@@ -28,8 +28,7 @@ body{
     text-shadow: 0 0 3px black;
 }
 .navbar .kanan{
-    position: absolute;
-    right: 15%;
+    transform: translateX(600px);
 }
 
 /* akhir navbar */
@@ -105,5 +104,8 @@ h2{
 @media all and (max-width: 992px) {
     .jumbotron{
         padding-top: 25%;
+    }
+    .navbar .kanan{
+        transform: translateX(0px);
     }
 }
