@@ -1,5 +1,5 @@
 // smooth scroll
-$('.nav-link').on('click', function(e){
+$('.navigation').on('click', function(e){
 
     var tujuan = $(this).attr('href');
     var elementujuan = $(tujuan);
