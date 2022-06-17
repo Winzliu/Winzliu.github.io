@@ -73,7 +73,7 @@ body{
 /* contact */
 .contact{
     min-height: 600px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 /* akhir contact */
 
@@ -81,11 +81,117 @@ body{
 footer{
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: 70px;
     height: 40px;
-    background-color: #fdf1cf52;
+    background-color: #fdf1cf00;
 }
 /* akhir footer*/
+
+/* navbar bawah */
+.nav-bawah{
+    background-color: aqua;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.nav-bawah li{
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.nav-bawah .cont{
+    margin-left: 30px;
+}
+
+.nav-bawah li .icon{
+    position: relative;
+    z-index: 1;
+    background-color: #29fd5300;
+    border-radius: 50%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    margin-bottom: -10px;
+    transition: .5s;
+}
+
+.nav-bawah li.active .icon{
+    transform: translate(0px, -22px);
+    background-color: #29fd53;
+    border: 5px solid white;
+}
+
+.nav-bawah li .text{
+    position: absolute;
+    transform: translate(-20px,-25px);
+    transition: .5s;
+    opacity: 0;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.nav-bawah li.active .text{
+    transform: translate(-20px,-10px);
+    opacity: 1;
+}
+
+/* tidak bisa mengikuti luas layar */
+/* .bulat{
+    transform: translate(55.5px, -68px);
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-color: #29fd53;
+    border-radius: 50%;
+    border: 5px solid white;
+    transition: .5s;
+}
+
+.bulat::before{
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: -998px;
+    background-color: transparent;
+    width: 1000px;
+    height: 20px;
+    border-radius: 0px 30px 0 0;
+    box-shadow: 0 -10px 0 0 white;
+}
+
+.bulat::after{
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 43.5px;
+    background-color: transparent;
+    width: 1000px;
+    height: 20px;
+    border-radius: 30px 0px 0 0;
+    box-shadow: 0 -10px 0 0 white;
+}
+
+.nav-bawah li:nth-child(1).active ~ .bulat{
+    transform: translate(55.5px, -68px);
+} 
+
+.nav-bawah li:nth-child(2).active ~ .bulat{
+    transform: translate(149.5px, -68px);
+} 
+
+.nav-bawah li:nth-child(3).active ~ .bulat{
+    transform: translate(245.5px, -68px);
+}
+
+.nav-bawah li:nth-child(4).active ~ .bulat{
+    transform: translate(339.5px, -68px);
+} */
+
+/* akhir navbar bawah */
 
 h2{
 
@@ -105,7 +211,14 @@ h2{
     .jumbotron{
         padding-top: 25%;
     }
+    .navbar-brand{
+        margin: auto;
+    }
     .navbar .kanan{
         transform: translateX(0px);
+    }
+    .navbar .collapse, .navbar-toggler{
+        opacity: 0;
+        transform: translateY(-200px);
     }
 }
