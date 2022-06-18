@@ -9,7 +9,8 @@ body{
 
 /* navbar */
 .navbar{
-    background-color: transparent;
+    background-color: rgb(52, 130, 52);
+    border-radius: 0 0 5px 5px;
 }
 
 .navbar .navbar-brand{
@@ -22,13 +23,16 @@ body{
 .navbar .nav-link{
     display: inline-block;
     font-size: 20px;
-    margin-left: 30px;
+    margin-right: 30px;
 }
+
+
 .navbar a:hover{
     text-shadow: 0 0 3px black;
 }
 .navbar .kanan{
-    transform: translateX(600px);
+    position: absolute;
+    right: 10%;
 }
 
 /* akhir navbar */
@@ -38,23 +42,92 @@ body{
 .jumbotron{
     width: 100%;
     min-height: 600px;
-    background-color: #Fdf1cf;
-    padding-top: 10%;
 }
 
-.jumbotron img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    box-shadow: 0 0 35px 5px lightskyblue;
-    border: 2px solid wheat;
+.jumbotron .profile{
+    position: absolute;
+    width: 70%;
+    height: 2000px;
+    background-color: #Fdf1cf;
+    z-index: 1;
+    top: -500px;
+    border-radius: 0 1000px 1000px 0;
+    box-shadow: 10px 0px 20px #Fdf1cf,30px 0px 200px #Fdf1cf,50px 0px 2000px #Fdf1cf,70px 0px 3000px #Fdf1cf,100px 0px 4000px #Fdf1cf
+}
+
+.jumbotron .profile .tulisan{
+    margin-top: 680px;
+    margin-left: 120px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.jumbotron .profile .tulisan h3{
+    font-size: 40px;
+    margin-bottom: -10px;
+}
+
+.jumbotron .profile .tulisan h1{
+    font-size: 80px;
+    margin-bottom: -10px;
+}
+
+.jumbotron .profile .tulisan h4{
+    font-size: 30px;
+    word-spacing: 20px;
+}
+
+.jumbotron .profile .bunga{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    margin-left: 600px;
+    top: 33%;
+}
+
+.jumbotron .profile .bunga .Bbunga{
+    height: 380px;
+    position: absolute;
+    z-index: 2;
+    top: -40px;
+    left: -80px;
+}
+
+.jumbotron .profile .bunga .Gprofile{
+    overflow: hidden;
+    position: absolute;
+    height: 300px;
+    width: 300px; 
+    border-radius: 50%;
+    margin-left: 50px;
+    top: 5%;
+    z-index: 1;
+}
+
+.jumbotron .profile .bunga .Gprofile img{
+    width: 350px;
+    transform: translate(-22px,0);
+}
+
+.jumbotron .Bimg{
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.jumbotron .Bimg img{
+    position: absolute;
+    right: -50px;
+    top: -70px;
 }
 
 /* akhir jumbotron */
 
 /* about */
 .about{
+    position: relative;
     min-height: 600px;
+    z-index: 2;
+    background-color: white;
 }
 /* akhir about */
 
@@ -62,6 +135,8 @@ body{
 .gallery{
     min-height: 400px;
     background-color: #Fdf1cf;
+    position: relative;
+    z-index: 2;
 }
 
 .gallery img{
@@ -95,6 +170,8 @@ footer{
     left: 0;
     width: 100%;
     border-radius: 10px 10px 0 0;
+    transform: scale(0);
+    z-index: 999;
 }
 
 .nav-bawah li{
@@ -194,7 +271,6 @@ footer{
 /* akhir navbar bawah */
 
 h2{
-
     margin-top: 40px;
     text-shadow: 0px 0px 3px black;
 }
@@ -208,17 +284,86 @@ h2{
 }
 
 @media all and (max-width: 992px) {
-    .jumbotron{
-        padding-top: 25%;
-    }
+    /* navbar */
     .navbar-brand{
         margin: auto;
     }
     .navbar .kanan{
         transform: translateX(0px);
     }
-    .navbar .collapse, .navbar-toggler{
-        opacity: 0;
-        transform: translateY(-200px);
+    .navbar{
+        transform: scale(0);
     }
+
+    /* akhir navbar */
+
+    /* jumbotron */
+    .jumbotron .profile{
+        box-shadow: 0 0 0 0;
+        width: 100%;
+        height: 600px;
+        top: 0;
+        border-radius: 0 0 0 0;
+        z-index: 99999;
+    }
+    .jumbotron .Bimg{
+        transform: scale(0);
+    }
+
+    .jumbotron .profile .tulisan{
+        margin-top: 340px;
+        margin-left: 80px;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+    
+    .jumbotron .profile .tulisan h3{
+        font-size: 40px;
+        margin-bottom: -10px;
+    }
+    
+    .jumbotron .profile .tulisan h1{
+        font-size: 80px;
+        margin-bottom: -10px;
+    }
+    
+    .jumbotron .profile .tulisan h4{
+        font-size: 30px;
+        word-spacing: 20px;
+    }
+    .jumbotron .profile .bunga{
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        margin-left: 60px;
+        top: 3%;
+    }
+    
+    .jumbotron .profile .bunga .Bbunga{
+        height: 320px;
+        position: absolute;
+        z-index: 2;
+        top: -12px;
+        left: -50px;
+    }
+    
+    .jumbotron .profile .bunga .Gprofile{
+        object-fit: cover;
+        height: 250px;
+        width: 250px;
+        position: absolute;
+        margin-left: 60px;
+        top:10%
+    }
+
+    .jumbotron .profile .bunga .Gprofile img{
+        transform: translate(-50px ,0);
+    }
+
+    /* akhir jumbotron */
+
+    /* navbar bawah */
+    .nav-bawah{
+        transform: scale(1);
+    }
+    /* akhir navbar bawah */
 }
