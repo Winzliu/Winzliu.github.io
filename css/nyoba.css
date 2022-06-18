@@ -1,5 +1,5 @@
 html{
-position: relative;
+    position: relative;
 }
 
 body{
@@ -11,6 +11,7 @@ body{
 .navbar{
     background-color: rgb(52, 130, 52);
     border-radius: 0 0 5px 5px;
+    width: 100%;
 }
 
 .navbar .navbar-brand{
@@ -116,7 +117,7 @@ body{
 
 .jumbotron .Bimg img{
     position: absolute;
-    right: -50px;
+    right: -70px;
     top: -70px;
 }
 
@@ -304,7 +305,6 @@ h2{
         height: 600px;
         top: 0;
         border-radius: 0 0 0 0;
-        z-index: 99999;
     }
     .jumbotron .Bimg{
         transform: scale(0);
@@ -359,11 +359,16 @@ h2{
         transform: translate(-50px ,0);
     }
 
+    .jumbotron .Bimg{
+        transform: scale(0);
+    }
+
     /* akhir jumbotron */
 
     /* navbar bawah */
     .nav-bawah{
         transform: scale(1);
+        z-index: 999;
     }
     /* akhir navbar bawah */
 }
