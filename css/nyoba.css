@@ -89,8 +89,8 @@ body{
     height: 380px;
     position: absolute;
     z-index: 2;
-    top: -40px;
-    left: -80px;
+    top: -10px;
+    left: -30px;
 }
 
 .jumbotron .profile .bunga .Gprofile{
@@ -280,7 +280,7 @@ h2{
 .konten hr{
     margin: auto;
     margin-bottom: 20px;
-    width: 250px;
+    width: 15%;
     border-top: 3px solid rgb(0, 0, 0);
 }
 
@@ -299,20 +299,29 @@ h2{
     /* akhir navbar */
 
     /* jumbotron */
+.jumbotron{
+    position: relative;
+    justify-content: center;
+    background-color: #Fdf1cf;
+}
+
     .jumbotron .profile{
+        background-color: transparent;
+        justify-content: center;
         box-shadow: 0 0 0 0;
-        width: 100%;
-        height: 600px;
+        width: 80%;
+        height: 100%;
+        left: 10%;
         top: 0;
         border-radius: 0 0 0 0;
     }
-    .jumbotron .Bimg{
-        transform: scale(0);
-    }
 
     .jumbotron .profile .tulisan{
-        margin-top: 340px;
-        margin-left: 80px;
+        width: 100%;
+        margin-top: 420px;
+        text-shadow: 3px 3px 4px rgba(209, 204, 63, 0.768);
+        margin-left: 0;
+        text-align: center;
         font-family: 'Kdam Thmor Pro', sans-serif;
     }
     
@@ -322,7 +331,7 @@ h2{
     }
     
     .jumbotron .profile .tulisan h1{
-        font-size: 80px;
+        font-size: 50px;
         margin-bottom: -10px;
     }
     
@@ -331,32 +340,35 @@ h2{
         word-spacing: 20px;
     }
     .jumbotron .profile .bunga{
-        width: 400px;
-        height: 400px;
+        position: relative;
+        width: 100%;
+        height: 60%;
         position: absolute;
-        margin-left: 60px;
-        top: 3%;
+        margin-left: 0;
+        top: 10%;
     }
     
     .jumbotron .profile .bunga .Bbunga{
-        height: 320px;
+        transform: scale(0);
+        width: auto;
+        height: 100%;
         position: absolute;
         z-index: 2;
-        top: -12px;
-        left: -50px;
+        top: 0;
+        left: 0;
     }
     
     .jumbotron .profile .bunga .Gprofile{
-        object-fit: cover;
-        height: 250px;
-        width: 250px;
+        box-shadow: 0px 0px 10px 2px black;
+        width: 300px;
+        height: 300px;
         position: absolute;
-        margin-left: 60px;
-        top:10%
+        margin: 0;
+        top:0;
     }
 
     .jumbotron .profile .bunga .Gprofile img{
-        transform: translate(-50px ,0);
+        transform: translate(-30px ,-40px);
     }
 
     .jumbotron .Bimg{
